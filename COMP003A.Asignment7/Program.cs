@@ -29,10 +29,18 @@ namespace COMP003A.Asignment7
                 Console.WriteLine("Please enter a name:");
                 string name = Console.ReadLine();
                 names.Add(name);
+                Console.WriteLine();
+                Console.WriteLine();
 
                 Console.WriteLine("Press any key to add more or (e) to exit");
                 userInput = Convert.ToChar(Console.ReadLine());
             } while (userInput != 'e');
+
+            SectionSeparator("List - Traversal Section");
+            TraverseList(names);
+
+            SectionSeparator("List - Reverse Traversal Section");
+            TraverseListReverse(names);
         }
 
         /// <summary>
